@@ -1,0 +1,109 @@
+/* ==== GOOGLE FONTS IMPORT LINK ==== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/* === root Classes === */
+:root {
+    --ruler: 16px;
+    --white-Color: #FFF;
+    --bg-Color: #EBECF0;
+    --red-Color: #AE1100;
+    --shadow-Color: #BABECC;
+}
+
+/* === SYMMENTIC CLASSES STYLING === */
+body, html {
+    background: var(--bg-Color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, input, select, button {
+    color: #61677C;
+    font-size: var(--ruler);
+    letter-spacing: 1.4px;
+}
+
+/* === ELEMENTS STYLING === */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    padding: var(--ruler);
+}
+
+.segment {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.segment h1 {
+    font-size: 1.5rem;
+}
+
+button, input {
+    width: 100%;
+    background-color: var(--bg-Color);
+    font-size: var(--ruler);
+    border-radius: calc(var(--ruler) * 20);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 var(--white-Color);
+}
+
+input {
+    appearance: none;
+    box-shadow: inset 2px 2px 5px var(--shadow-Color),
+        inset -5px -5px 10px var(--white-Color);
+}
+
+input::placeholder {
+    color: #61677C;
+    font-size: 13px;
+}
+
+input:focus {
+    box-shadow: inset 1px 1px 2px var(--shadow-Color),
+        inset -1px -1px 2px var(--white-Color);
+}
+
+button {
+    font-weight: 500;
+    gap: 1rem;
+    box-shadow: -5px -5px 20px var(--white-Color),
+        5px 5px 20px var(--shadow-Color);
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--shadow-Color);
+    box-shadow: -2px -2px 5px var(--white-Color),
+        2px 2px 5px var(--shadow-Color);
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px var(--shadow-Color),
+        inset -1px -1px 2px var(--white-Color);
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: normal;
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
